@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);    
+    --Grayishblue: hsl(233, 8%, 62%);
+    --LightBlue: hsl(220, 16%, 96%);
+    --VeryGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    //background-color: gray ;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--White);
+    align-items: center;
+    padding:0.8em 12em;
+    .menu-header{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right: 20px;
+            a{
+                text-decoration: none;
+                color: var(--Grayishblue);
+                font-size: 1em;
+            }
+        }
+    }
+ }
+.button{
+        background-image: linear-gradient(to right,var(--LimeGreen) 0% , var(--BrightCyan  ) 100%);
+        border: none;
+        padding: 1em 2em;
+        border-radius: 1.5em;
+        color: white;
+        font-weight: 700;
+    }
+
+.wrapper-2{
+    padding:0.8em 12em;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: -16.5em;
+    background-position-x:39em ;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    //border: 1px solid blue;
+    .title{
+        padding-right: 13em;
+        //border: 1px solid red;
+        padding-bottom: 15.5em;
+        .title-h1{
+            font-weight: 300;
+            color: var(--DarkBlue);
+            font-size: 40px;
+            margin-bottom: 0.5em;
+        }
+        .title-description{
+            color: var(--Grayishblue);
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
+    }
+    img{
+        margin-top: -8em;
+        margin-right: -20.5em;
+    }
+}
+
+@media  screen and (max-width:1366px){
+    body{
+        width: 100%;
+    }
+    .wrapper,.wrapper-2{
+        padding: 0.8em 8em;
+    }
+}
+
